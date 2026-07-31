@@ -10,6 +10,12 @@
   },
   "plugins": [
     {
+      "name": "animation-reverse-engineering",
+      "source": "./skills/animation-reverse-engineering",
+      "description": "Reverse-engineer any motion reference (video, GIF, X/Dribbble link) into production animation code — frame-level ffmpeg dissection, measured timing/easing/stagger, and a faithful React/TypeScript framer-motion port",
+      "category": "Frontend"
+    },
+    {
       "name": "arcium",
       "source": "./skills/arcium",
       "description": "Arcium Network for encrypted computation via MPC — data stays private during processing, enabling dark pools, sealed-bid auctions, encrypted voting, confidential DeFi, and hidden game state on Solana",
