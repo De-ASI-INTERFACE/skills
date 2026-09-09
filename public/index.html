@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Skills - AI Agent Skills for Solana Development</title>
+    <meta name="description" content="AI agent skills for Solana development — DeFi protocols, infrastructure, security, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .badges {
+            margin-top: 1rem;
+        }
+        
+        .badges img {
+            margin: 0 0.25rem;
+        }
+        
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-card {
+            background: #f9f9f9;
+            padding: 1.25rem;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-card h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .skill-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #764ba2;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎯 Solana Skills</h1>
+            <p>AI agent skills for Solana development — DeFi protocols, infrastructure, security, and more.</p>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0">
+                <img src="https://img.shields.io/badge/Agent%20Skills-Compatible-green.svg" alt="Agent Skills Compatible">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>🚀 Quick Start</h2>
+            <p>These skills work with any AI agent. We recommend <a href="https://claude.ai/code">Claude Code</a> with Opus models for best results.</p>
+            
+            <h3>Claude Code</h3>
+            <p>Add the marketplace:</p>
+            <pre><code>/plugin marketplace add sendaifun/skills</code></pre>
+            
+            <p>Install skills:</p>
+            <pre><code>/plugin install jupiter
+/plugin install helius
+/plugin install meteora</code></pre>
+
+            <h3>Cursor</h3>
+            <ol>
+                <li>Open Settings (<strong>Cmd+Shift+J</strong> / <strong>Ctrl+Shift+J</strong>)</li>
+                <li>Navigate to <strong>Rules & Commands</strong> → <strong>Project Rules</strong> → <strong>Add Rule</strong> → <strong>Remote Rule (GitHub)</strong></li>
+                <li>Enter: <code>https://github.com/sendaifun/skills.git</code></li>
+            </ol>
+
+            <h3>Any Agent</h3>
+            <pre><code>npx skills add sendaifun/skills</code></pre>
+        </section>
+
+        <section class="section">
+            <h2>💼 Available Skills</h2>
+            
+            <h3>DeFi</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Jupiter</h4>
+                    <p>Ultra swaps, limit orders, DCA, perpetuals, lending, and token APIs</p>
+                </div>
+                <div class="skill-card">
+                    <h4>GLAM</h4>
+                    <p>Tokenized vaults, DeFi integrations (Jupiter, Kamino), staking, asset management</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Kamino</h4>
+                    <p>Lending, borrowing, liquidity management, leverage trading</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Lulo</h4>
+                    <p>Lending aggregator across Kamino, Drift, MarginFi, Jupiter</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Manifest</h4>
+                    <p>CLOB, Limit orders, Reverse orders, Global orders, Destiny vaults</p>
+                </div>
+                <div class="skill-card">
+                    <h4>MarginFi</h4>
+                    <p>Lending, borrowing, leveraged positions (looping) and flash loans</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Meteora</h4>
+                    <p>DLMM, DAMM pools, bonding curves, Alpha Vaults</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Orca</h4>
+                    <p>Whirlpools concentrated liquidity AMM, swaps, positions</p>
+                </div>
+                <div class="skill-card">
+                    <h4>PumpFun</h4>
+                    <p>Token launches, bonding curves, PumpSwap AMM</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Raydium</h4>
+                    <p>AMM pools, CLMM, CPMM, LaunchLab token launches</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Sanctum</h4>
+                    <p>Liquid staking, LST swaps, Infinity pool</p>
+                </div>
+            </div>
+
+            <h3>Infrastructure</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Arcium</h4>
+                    <p>Encrypted computation via MPC — dark pools, sealed-bid auctions, encrypted voting, confidential DeFi</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Helius</h4>
+                    <p>RPC, DAS API, webhooks, priority fees, LaserStream gRPC</p>
+                </div>
+                <div class="skill-card">
+                    <h4>QuickNode</h4>
+                    <p>RPC (80+ chains), DAS API, Yellowstone gRPC, Streams, webhooks, priority fees, Metis Jupiter</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Light Protocol</h4>
+                    <p>ZK Compression, rent-free compressed tokens</p>
+                </div>
+                <div class="skill-card">
+                    <h4>MagicBlock</h4>
+                    <p>Ephemeral Rollups, sub-10ms latency, gasless transactions</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Sol Incinerator</h4>
+                    <p>Burn tokens, burn NFTs, close token accounts</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Squads</h4>
+                    <p>Multisig wallets, smart accounts, account abstraction</p>
+                </div>
+            </div>
+
+            <h3>Trading, Oracles & Data</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>DFlow</h4>
+                    <p>Spot trading, prediction markets, Swap API, WebSocket streaming</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Ranger Finance</h4>
+                    <p>Perps aggregator across Drift, Flash, Adrena, Jupiter</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Pyth</h4>
+                    <p>Real-time price feeds, confidence intervals, EMA prices</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Switchboard</h4>
+                    <p>Price feeds, on-demand data, VRF randomness, Surge streaming</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Birdeye</h4>
+                    <p>Real-time token prices, OHLCV charts, DEX pools, trades, trending tokens</p>
+                </div>
+                <div class="skill-card">
+                    <h4>CoinGecko</h4>
+                    <p>Token prices, DEX pool data, OHLCV charts, trades</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Metengine</h4>
+                    <p>Smart money analytics for Polymarket, Hyperliquid, and Meteora</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Wallet Analysis</h4>
+                    <p>Solana-first wallet analysis with Zerion API</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📚 Learn More</h2>
+            <a href="https://github.com/De-ASI-INTERFACE/skills" class="cta-button">View on GitHub</a>
+            <a href="https://github.com/De-ASI-INTERFACE/skills/blob/main/CONTRIBUTING.md" class="cta-button">Contributing Guide</a>
+            <a href="https://agentskills.io" class="cta-button">Agent Skills Spec</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Built by <a href="https://github.com/sendaifun">SendAI</a> for the Solana ecosystem</p>
+        <p>Licensed under <a href="https://github.com/De-ASI-INTERFACE/skills/blob/main/LICENSE">Apache 2.0</a></p>
+    </footer>
+</body>
+</html>
