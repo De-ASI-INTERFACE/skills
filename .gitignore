@@ -12,6 +12,16 @@ Thumbs.db
 # Dependencies
 node_modules/
 
+# Lock files (keep pnpm-lock.yaml for consistency)
+# package-lock.json
+# yarn.lock
+
+# Build outputs
+dist/
+build/
+.next/
+.vercel/
+
 # Logs
 *.log
 

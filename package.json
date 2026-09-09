@@ -1,0 +1,31 @@
+{
+  "name": "solana-skills",
+  "version": "1.0.0",
+  "description": "AI agent skills for Solana development — DeFi protocols, infrastructure, security, and more.",
+  "scripts": {
+    "build": "echo 'Build complete'",
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/De-ASI-INTERFACE/skills.git"
+  },
+  "keywords": [
+    "solana",
+    "ai",
+    "agent",
+    "skills",
+    "defi",
+    "blockchain"
+  ],
+  "author": "SendAI",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/De-ASI-INTERFACE/skills/issues"
+  },
+  "homepage": "https://github.com/De-ASI-INTERFACE/skills#readme",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
